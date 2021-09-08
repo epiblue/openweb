@@ -21,7 +21,7 @@ html, body {
   width: 960px;
   height: 540px;
   background-color: white;
-  box-shadow: 0px 50px 100px rgba(0, 0, 0, .4);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ html, body {
   font-size: 1em;
   margin-left: 25px;
   font-weight: 800;
-  float: left;
+  float: left;  
 }
 
 i {
@@ -86,16 +86,16 @@ i:hover {
   font-weight: 600;
   color: white;
   text-decoration: none;
-  background-color: #fe864c;
+  background-color: rgba(114,165,68,1);
   transition: background-color 0.2s;
   transition: color 0.2s;
   padding: 10px 20px;
-  border: 2px solid #fe864c;
+  border: 2px solid rgba(114,165,68,1);
 }
 
 .text a:hover, .text a:active {
   background-color: white;
-  color: #fe864c;
+  color: rgba(114,165,68,1);
 }
 
 .photo {
@@ -104,8 +104,23 @@ i:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../images/hand_tree.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+footer {
+  background:#72a544;
+  background: linear-gradient(90deg, rgba(114,165,68,1) 0%, rgba(114,165,68,1) 35%, rgba(0,0,0,1) 100%);
+  color:white;
+  width:100%;
+  font-size:0.76rem;
+  display:flex;
+}
+footer img {
+  margin-left: 25px;
+}
+footer span {
+  padding:1em;
+  display:block;
 }
